@@ -1,6 +1,6 @@
 import java.util.*;
 package com.example.project;
-
+import java.util.Arrays
 import java.util.Scanner;
 
 public class Exercise2 {
