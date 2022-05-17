@@ -14,10 +14,10 @@ public class Exercise1 {
 		}
 	}
 
-	public boolean esCuadradoPerfecto(int numero) {
+public boolean esCuadradoPerfecto(int numero) {
 		String numCadena= Integer.toString(numero);
 	    int[] numerO= new int[numCadena.length()];
-	  if(a>-1) {
+	  if(numero>-1) {
 		  if(numCadena.length()==1 ) {
 	  	    	if(numerO[0]!=0) {
 	  	    		condiciones(numerO);
