@@ -1,3 +1,4 @@
+import java.util.*;
 package com.example.project;
 
 import java.util.Scanner;
@@ -14,8 +15,8 @@ public class Exercise2 {
 			int a[] = new int[n];
 
 			for (int i = 0; i < n; i++) {
-				n = sc.nextInt();
-				a[i] = n;
+		//		n = sc.nextInt();
+				a[i] = sc.nextInt();;
 			}
 
 			suma = sc.nextInt();
@@ -33,7 +34,7 @@ public class Exercise2 {
 			 }
 		 }
 		if(a[posicion+1]==1){
-				System.out.println("no pueden almacenarse el 7");
+				//System.out.println("no pueden almacenarse el 7");
 				if((esSubconjuntoSuma(eliminar(a,posicion),0,suma)==true)) {
 					return true;
 				}
@@ -64,12 +65,14 @@ public class Exercise2 {
 	 
 	 
  int[] eliminar(int a[], int pos) {
+	 int[] array2 ;
 		
 		 for (int k = pos; k < a.length-1; k++) {
 			a[k]=a[k+1];
 		}
-
-		 return a;
+		array2 = Arrays.copyOf(a, a.length-1);
+		 return array2;
 	 }
 }
-}
+
+
