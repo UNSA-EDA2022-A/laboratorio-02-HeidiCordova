@@ -1,7 +1,7 @@
 package com.example.project;
 
 import java.util.Scanner;
-
+import java.util.Arrays;
 public class Exercise1 {
 
 	public static void main(final String[] args) {
