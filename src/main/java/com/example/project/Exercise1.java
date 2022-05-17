@@ -14,13 +14,13 @@ public class Exercise1 {
 		}
 	}
 
-	public boolean esCuadradoPerfecto(int a) {
-		String numCadena= Integer.toString(a);
-	    int[] numero= new int[numCadena.length()];
+	public boolean esCuadradoPerfecto(int numero) {
+		String numCadena= Integer.toString(numero);
+	    int[] numerO= new int[numCadena.length()];
 	  if(a>-1) {
 		  if(numCadena.length()==1 ) {
-	  	    	if(numero[0]!=0) {
-	  	    		condiciones(numero);
+	  	    	if(numerO[0]!=0) {
+	  	    		condiciones(numerO);
 	  	    	
 	  	    	}
 	  	    	else {
@@ -28,12 +28,12 @@ public class Exercise1 {
 	  	    	}
 		  }else {
 			  for (int i = 0; i < numCadena.length();i++) {
-				  numero[i]=Integer.parseInt(numCadena.substring(i,i+1));
+				  numerO[i]=Integer.parseInt(numCadena.substring(i,i+1));
 			  }
-	    		  if((numero[numero.length-1]==2)||
-	  					(numero[numero.length-1]==3)||
-	  					(numero[numero.length-1]==7)||
-	  					(numero[numero.length-1]==8)) {
+	    		  if((numerO[numerO.length-1]==2)||
+	  					(numerO[numerO.length-1]==3)||
+	  					(numerO[numerO.length-1]==7)||
+	  					(numerO[numerO.length-1]==8)) {
 	  			return false;
 	  			}
 	  			
